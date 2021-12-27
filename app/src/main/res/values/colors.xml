@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#000428</color>
+    <color name="colorPrimaryVariant">#001b33</color>
+    <color name="colorOnPrimary">#00294d</color>
+    <color name="colorSecondary">#006dcc</color>
+    <color name="colorSecondaryVariant">#33a0ff</color>
+    <color name="colorOnSecondary">#0088ff</color>
+
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="frost_start">#000428</color>
+    <color name="frost_mid">#001b33</color>
+    <color name="frost_end">#00294d</color>
+
+    <color name="frost_start_light">#001aff</color>
+    <color name="frost_mid_light">#007ae6</color>
+    <color name="frost_end_light">#66b8ff</color>
+
+    <color name="recording_button">#00cc00</color>
+    <color name="recording_red_button">#ff1a1a</color>
+    <color name="pause_recording">#ff6600</color>
+    <color name="recording_continue">#ffff00</color>
+</resources>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/welcomeFragment">
+
+    <fragment
+        android:id="@+id/welcomeFragment"
+        android:name="com.gk.recording.fragments.WelcomeFragment"
+        android:label="fragment_welcome"
+        tools:layout="@layout/fragment_welcome" >
+        <action
+            android:id="@+id/action_welcomeFragment_to_permissionsFragment"
+            app:destination="@id/permissionsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/audioRecordingFragment"
+        android:name="com.gk.recording.fragments.AudioRecordingFragment"
+        android:label="fragment_recording"
+        tools:layout="@layout/fragment_audio_recording" >
+        <action
+            android:id="@+id/action_audioRecordingFragment_to_recordsFragment"
+            app:destination="@id/recordsFragment" />
+        <action
+            android:id="@+id/action_audioRecordingFragment_to_videoRecordingFragment"
+            app:destination="@id/videoRecordingFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/recordsFragment"
+        android:name="com.gk.recording.fragments.RecordsFragment"
+        android:label="fragment_records_list"
+        tools:layout="@layout/fragment_records_list" >
+        <action
+            android:id="@+id/action_recordsFragment_to_recordingFragment"
+            app:destination="@id/audioRecordingFragment" />
+        <action
+            android:id="@+id/action_recordsFragment_to_videoRecordingFragment"
+            app:destination="@id/videoRecordingFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/permissionsFragment"
+        android:name="com.gk.recording.fragments.PermissionsFragment"
+        android:label="PermissionsFragment" >
+        <action
+            android:id="@+id/action_permissionsFragment_to_recordingFragment"
+            app:destination="@id/audioRecordingFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/videoRecordingFragment"
+        android:name="com.gk.recording.fragments.VideoRecordingFragment"
+        android:label="fragment_media_recording"
+        tools:layout="@layout/fragment_media_recording" >
+        <action
+            android:id="@+id/action_mediaRecordingFragment_to_recordsFragment"
+            app:destination="@id/recordsFragment" />
+        <action
+            android:id="@+id/action_mediaRecordingFragment_to_audioRecordingFragment"
+            app:destination="@id/audioRecordingFragment" />
+    </fragment>
+</navigation>
